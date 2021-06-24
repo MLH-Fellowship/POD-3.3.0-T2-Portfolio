@@ -1,12 +1,12 @@
 import os
 from flask import Flask, render_template, jsonify
 from dotenv import load_dotenv
+from . import db
 
 load_dotenv()
 app = Flask(__name__)
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=22)
+app.config['DATABASE'] = os.path.join(os.getcwd(),'flask.sqlite')
+db.init_app(app)
 
 @app.route('/')
 def index():
