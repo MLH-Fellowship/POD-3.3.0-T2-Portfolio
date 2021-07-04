@@ -9,6 +9,8 @@ cryptography==2.3
 decorator==4.2.1
 distlib==0.3.2
 Flask==2.0.1
+flask_sqlalchemy
+flask_migrate
 gunicorn==20.1.0
 idna==2.5
 importlib-metadata==4.5.0
