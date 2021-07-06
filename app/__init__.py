@@ -1,8 +1,6 @@
 import os
 from flask import Flask, render_template, jsonify, request
-# from . import db
 from werkzeug.security import generate_password_hash, check_password_hash
-# from app.db import get_db
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
