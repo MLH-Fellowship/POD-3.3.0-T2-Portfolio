@@ -4,7 +4,7 @@
 function test {
    httpDomain="http://patrick-portfolio.duckdns.org"
    httpsDomain="https://patrick-portfolio.duckdns.org"
-   declare -a endpoints=("" "health" "patrick" "athena" "juancarlos" "register")
+   declare -a endpoints=("" "health" "patrick" "athena" "juancarlos" "register" "login")
 
    #Generate random user and password
    username=$(date | md5sum)

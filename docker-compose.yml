@@ -16,3 +16,4 @@ services:
     restart: always
     env_file:
       - .env
+    command: ["postgres", "-c", "log_statement=all"]
