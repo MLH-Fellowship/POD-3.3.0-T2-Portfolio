@@ -9,3 +9,4 @@ COPY . /myportfolio
 
 RUN chmod u+x ./entrypoint.sh
 ENTRYPOINT ["sh", "./entrypoint.sh"]
+

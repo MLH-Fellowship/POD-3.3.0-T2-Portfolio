@@ -6,14 +6,16 @@ services:
     env_file:
       - .env
     volumes:
-      - .:/portfolio
+      - .:/myportfolio
     depends_on:
       - db
+
   db:
     image: postgres
     restart: always
     env_file:
       - .env
+
   nginx:
     image: jonasal/nginx-certbot:latest
     restart: unless-stopped

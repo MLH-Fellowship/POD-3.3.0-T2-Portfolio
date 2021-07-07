@@ -12,7 +12,7 @@ function test {
    echo "User: $username \n Password: $password"
    for endpoint in "${endpoints[@]}"
    do
-      url="${httpDomain}/${endpoint}"
+      url="${httpsDomain}/${endpoint}"
 
       if [[ ${endpoint} == "register" ]]
       then
